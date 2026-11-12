@@ -26,8 +26,8 @@ function homeHero() {
       <div class="lp-art" id="lp-art">${imgs.map((s, k) => `<img src="/assets/hero/${s}.jpg" alt="" style="object-position:${pos[k]}" class="${k ? '' : 'on'}">`).join('')}</div>
       <div class="lp-card">
         <div class="lp-eye"><span>${first ? 'Welcome back, ' + esc(first) : 'HR Analytics'}</span><i></i><b id="lp-count">01 — 0${imgs.length}</b></div>
-        <h2>Từ dữ liệu nhân sự đến <em>dashboard ra quyết định</em></h2>
-        <p>Tải file dữ liệu HR lên. BIE dẫn bạn đi từ business context, chọn KPI, xử lý dữ liệu đến một dự án Power BI sẵn sàng sử dụng.</p>
+        <h2>From HR data to <em>decision-ready dashboards</em></h2>
+        <p>Upload your HR data. BIE guides you from business context and KPI selection to data processing and a ready-to-use Power BI project.</p>
         <div class="lp-cta"><a class="lp-btn pri" href="#analysis">Bắt đầu phân tích</a><a class="lp-btn" href="#skills">Xem các chặng <span aria-hidden="true">→</span></a></div>
         <div class="lp-feat"><span>${lpIc('kpi')}4–6 KPI mỗi trang</span><span>${lpIc('ev')}Evaluator tự chấm</span><span>${lpIc('pbip')}Xuất PBIP</span></div>
       </div>

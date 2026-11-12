@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
-/* Palette Altera: navy #0B2B25 · slate #1E2A3A · gold #C8A96A · cream #F4EEE6 · grey #8D959E */
+/* Palette Altera: navy #051613 · slate #1E2A3A · gold #C8A96A · cream #F4EEE6 · grey #8D959E */
 :root{
-  --bg:#F7F6F1;--shell:#F7F6F1;--card:#FFFFFF;--card2:#E6F0E9;--ink:#0B2B25;--mut:#6F6A64;--line:#CFDDD4;
-  --acc:#C8A96A;--acc2:#C8A96A;--acct:#134E43;--on-acc:#0B2B25;--accsoft:#E6F0E9;--ok:#2F9A70;--err:#C8483A;--dark:#0B2B25;
+  --bg:#F7F6F1;--shell:#F7F6F1;--card:#FFFFFF;--card2:#E6F0E9;--ink:#051613;--mut:#6F6A64;--line:#CFDDD4;
+  --acc:#C8A96A;--acc2:#C8A96A;--acct:#0A2923;--on-acc:#051613;--accsoft:#E6F0E9;--ok:#2F9A70;--err:#C8483A;--dark:#051613;
   --shadow:0 1px 2px rgba(29,23,18,.05),0 8px 24px rgba(29,23,18,.08);
   --serif:'Quicksand','Segoe UI',system-ui,sans-serif;
 }
 :root[data-theme=dark]{
-  --bg:#071A16;--shell:#09231E;--card:#0B2B25;--card2:#12372F;--ink:#F7F6F1;--mut:#A9C1B6;--line:#20574C;
-  --accsoft:#17463C;--acct:#C8A96A;--dark:#08101C;--ok:#3FB386;--err:#E0675A;
+  --bg:#030908;--shell:#041310;--card:#051613;--card2:#081F1B;--ink:#F7F6F1;--mut:#A9C1B6;--line:#123831;
+  --accsoft:#0B2823;--acct:#C8A96A;--dark:#08101C;--ok:#3FB386;--err:#E0675A;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}
