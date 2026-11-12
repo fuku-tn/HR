@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
-/* Palette Altera: navy #1d1712 · slate #1E2A3A · gold #E9B04A · cream #F4EEE6 · grey #8D959E */
+/* Palette Altera: navy #0B2B25 · slate #1E2A3A · gold #C8A96A · cream #F4EEE6 · grey #8D959E */
 :root{
-  --bg:#F4F4F2;--shell:#F4F4F2;--card:#FFFFFF;--card2:#EDECE8;--ink:#14110F;--mut:#6F6A64;--line:#E3E0D9;
-  --acc:#E9B04A;--acc2:#E3CB97;--acct:#8A6414;--on-acc:#1d1712;--accsoft:#F3EAD2;--ok:#2F9A70;--err:#C8483A;--dark:#1d1712;
+  --bg:#F7F6F1;--shell:#F7F6F1;--card:#FFFFFF;--card2:#E6F0E9;--ink:#0B2B25;--mut:#6F6A64;--line:#CFDDD4;
+  --acc:#C8A96A;--acc2:#C8A96A;--acct:#134E43;--on-acc:#0B2B25;--accsoft:#E6F0E9;--ok:#2F9A70;--err:#C8483A;--dark:#0B2B25;
   --shadow:0 1px 2px rgba(29,23,18,.05),0 8px 24px rgba(29,23,18,.08);
   --serif:'Quicksand','Segoe UI',system-ui,sans-serif;
 }
 :root[data-theme=dark]{
-  --bg:#080808;--shell:#0e0e0d;--card:#171614;--card2:#22201d;--ink:#F4F1EA;--mut:#A39D92;--line:#2c2a26;
-  --accsoft:#2B2A25;--acct:#E9B04A;--dark:#08101C;--ok:#3FB386;--err:#E0675A;
+  --bg:#071A16;--shell:#09231E;--card:#0B2B25;--card2:#12372F;--ink:#F7F6F1;--mut:#A9C1B6;--line:#20574C;
+  --accsoft:#17463C;--acct:#C8A96A;--dark:#08101C;--ok:#3FB386;--err:#E0675A;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}
@@ -149,7 +149,7 @@ select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,va
 .fnode.pop::after{content:"";position:absolute;inset:-2px;border-radius:22px;border:2px solid var(--ok);animation:ring 1.2s ease-out forwards;pointer-events:none}
 .fnode.pop{animation:pop .6s ease}
 .fnode.shake{animation:shake .5s}
-@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(233,176,74,0),0 0 16px rgba(233,176,74,.35)}50%{box-shadow:0 0 0 6px rgba(233,176,74,.14),0 0 38px rgba(233,176,74,.65)}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(200,169,106,0),0 0 16px rgba(200,169,106,.35)}50%{box-shadow:0 0 0 6px rgba(200,169,106,.14),0 0 38px rgba(200,169,106,.65)}}
 @keyframes ring{from{opacity:.9;transform:scale(1)}to{opacity:0;transform:scale(1.22)}}
 @keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.07)}100%{transform:scale(1)}}
 @keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
@@ -385,7 +385,7 @@ ul.miss{margin:6px 0 0;padding-left:20px}ul.miss li{margin:3px 0;font-size:13px}
 /* ---- cổng kiểm chứng (Evaluator) ---- */
 .rb-gate{display:flex;flex-direction:column;gap:8px;margin-top:2px}
 .rb-chk{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;cursor:pointer}
-.rb-chk input{width:auto;accent-color:var(--accent,#E9B04A)}
+.rb-chk input{width:auto;accent-color:var(--accent,#C8A96A)}
 .rb-m[hidden]{display:none}
 .verdict{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--card2);white-space:nowrap}
 .verdict.pass{color:#1f9d55}.verdict.fail{color:#d64545}.verdict.warn{color:#c98a12}
