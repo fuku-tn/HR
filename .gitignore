@@ -9,8 +9,8 @@ output/*
 # Bản sao lưu SKILL khi nạp đè
 skills/_backup/
 
-# Cấu hình cục bộ của Claude Code
-.claude/
+# Claude Code: hook + agent + settings.json dùng chung được commit; chỉ quyền riêng từng máy là cục bộ
+.claude/settings.local.json
 
 # Cache giải nén template Power BI
 templates/.cache/
