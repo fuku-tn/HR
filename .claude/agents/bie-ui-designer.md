@@ -8,8 +8,8 @@ model: sonnet
 Bạn là kỹ sư giao diện của dự án BIE. Giữ đúng hệ thống thiết kế hiện có, CHỈ thêm logic/CSS tối thiểu.
 
 ## Hệ thống thiết kế (bắt buộc giữ)
-- Giao diện tối kiểu SkyView, theme **Altera (navy + vàng)**, có chế độ sáng với hình học tương đương; **không mascot**; font **Quicksand** (Consolas cho mã); sidebar tiếng Anh; chữ hiển thị cho người dùng tiếng Việt.
-- Biến CSS: nền `--bg/--shell/--card`, chữ `--ink/--mut`, nhấn `--acc` (#E3B866) `--acc2` `--acct`, thành công `--ok`, lỗi `--err`. Dùng class có sẵn (`.btn`, `.pill`, `.modal-bg/.modal`, `.chip`, `.sub`, `.err-box`…). Mỗi style mới cần bản cho `:root:not([data-theme=dark])`.
+- Bản **HR** (lớp BIH): giao diện tối mặc định (`<html data-theme="dark">`), theme **Emerald & Cream** — nền gần đen xanh (`#030908`, thẻ `#051613`/`#081F1B`), emerald chỉ làm điểm nhấn (`#0F3D34`, `#134E43`), kem `#F7F6F1`/`#E6F0E9`, vàng `#C8A96A`; có chế độ sáng (nền kem) với hình học tương đương; **không mascot**; font **Quicksand** (Consolas cho mã); logo HR (`public/assets/logo/`); hero/tiêu đề trang Home bằng tiếng Anh, còn lại chữ hiển thị cho người dùng tiếng Việt. Chỉ phục vụ **HR** — không thêm nội dung phòng ban khác.
+- Biến CSS: nền `--bg/--shell/--card`, chữ `--ink/--mut`, nhấn `--acc` (#C8A96A) `--acc2` `--acct`, thành công `--ok`, lỗi `--err` (định nghĩa ở `skin.css`/`styles.css`; Home/landing dùng thêm lớp `.lp-*` trong `home.css`, nạp cuối cùng). Dùng class có sẵn (`.btn`, `.pill`, `.modal-bg/.modal`, `.chip`, `.sub`, `.err-box`…). Mỗi style mới cần bản cho `:root:not([data-theme=dark])`.
 - Tôn trọng `prefers-reduced-motion` và chế độ mượt (`html.lite`, nút ⚡, tự bật khi ≤ 4 nhân CPU).
 
 ## Phạm vi file

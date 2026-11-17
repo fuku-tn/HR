@@ -18,7 +18,7 @@ const lpIc = (k) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 function homeHero() {
   let n = ''; try { n = localStorage.getItem('bie-user') || ''; } catch {}
   const first = n ? n.split(' ')[0] : '';
-  const imgs = ['hr-1', 'hr-4', 'hr-2', 'hr-3'], pos = ['72% 50%', '55% 50%', '50% 45%', '50% 50%'];
+  const imgs = ['hero-1', 'hero-2', 'hero-3', 'hero-4', 'hero-5', 'hero-6'], pos = ['50% 40%', '50% 40%', '50% 40%', '50% 55%', '50% 55%', '50% 60%'];
   const info = [['ctx', 'Business Context', 'Mục tiêu HR và người xem dashboard'], ['met', 'Key Metrics', 'Chọn KPI từ catalog theo dữ liệu'], ['etl', 'Data (ETL)', 'Làm sạch và mô hình hóa dữ liệu'], ['dash', 'Dashboard', 'Dựng dự án Power BI (PBIP)']];
   return `<section class="lp">
     ${navHTML('home')}
@@ -35,7 +35,7 @@ function homeHero() {
       <div class="lp-dots">${imgs.map((s, k) => `<button type="button" aria-label="Ảnh ${k + 1}" class="${k ? '' : 'on'}"></button>`).join('')}</div>
     </div>
     <div class="lp-info">
-      <a class="lp-thumb" href="#analysis" aria-label="Bắt đầu phân tích"><img src="/assets/hero/hr-4.jpg" alt=""></a>
+      <a class="lp-thumb" href="#analysis" aria-label="Bắt đầu phân tích"><img src="/assets/hero/hero-4.jpg" alt="" style="object-position:30% 50%"></a>
       ${info.map(([ic, t, d], k) => `<div class="lp-i"><span class="lp-i-ic">${lpIc(ic)}</span><h3>${t}</h3><p>${d}</p><a href="#skills">${k === 3 ? 'Learn more' : 'View more'} →</a></div>`).join('')}
       <a class="lp-i lp-hi" href="#analysis"><h3>Từ file dữ liệu đến dashboard</h3><p>Bắt đầu một Analysis mới ngay hôm nay.</p><span aria-hidden="true">→</span></a>
     </div></section>`;

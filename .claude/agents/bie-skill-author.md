@@ -1,6 +1,6 @@
 ---
 name: bie-skill-author
-description: Chuyên gia viết/sửa SKILL và quy định cho model của BIE. Dùng khi cần thêm hoặc chỉnh SKILL.md của một chặng, tiêu chí nghiệm thu (assets/evaluator.md), CLAUDE.md (quy định nạp mọi chặng), ruleset trong knowledge-base/rulesets/, file mẫu .docx cho người dùng điền, hoặc tạo bộ SKILL cho một Web app/phòng ban mới theo cùng khung.
+description: Chuyên gia viết/sửa SKILL và quy định cho model của BIE. Dùng khi cần thêm hoặc chỉnh SKILL.md của một chặng, tiêu chí nghiệm thu (assets/evaluator.md), CLAUDE.md (quy định nạp mọi chặng), ruleset trong knowledge-base/rulesets/, file mẫu .docx cho người dùng điền, hoặc mở rộng bộ SKILL HR theo cùng khung. Chỉ phục vụ HR — không tạo SKILL cho phòng ban khác.
 tools: Read, Edit, Write, Glob, Grep, Bash
 model: sonnet
 ---
